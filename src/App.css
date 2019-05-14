@@ -100,9 +100,9 @@ hr {
 }
 .Work h3{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 22px;
     color: #353636;
-    
+    font-size: 17px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -117,8 +117,8 @@ hr {
         width: 80%;
     }
     .Experiences {
-        margin-top: 30px;
-        margin-left: 12%;
+        align-items: center;
+        margin-left: 0;
         width: 80%;
     }
 }
@@ -133,7 +133,7 @@ hr {
         margin: 0;
     }
     .Experiences {
-        margin-left: 8%;
+        width: 90%;
     }
     .Main {
         margin-left: 10%;
@@ -147,9 +147,7 @@ hr {
     .Link {
         width: 30%;
     }
-    .Experiences {
-        margin-left: 0;
-    }
+    
 }
 @media only screen and (max-width: 680px) {
     .Main {
@@ -157,7 +155,7 @@ hr {
     }
     .Experiences {
         margin-left: 0;
-        width: 95%;
+        width: 85%;
     }
 }
 @media only screen and (max-width: 600px) {
