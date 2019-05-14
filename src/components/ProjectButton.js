@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Modal from 'react-bootstrap/Modal'
 import './ModalButton.css'
-import logo from '/Users/jonathanhedlund/Documents/Projekt/portfolio/src/square.jpg'
+import logo from '/Users/jonathanhedlund/Documents/Projekt/portfolio2/src/square.jpg'
 
 
 class ProjectButton extends React.Component {
