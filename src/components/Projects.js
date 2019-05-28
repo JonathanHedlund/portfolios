@@ -40,7 +40,7 @@ class Projects extends React.Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Här är mina projekt
+            <p>Coming soon.</p>
           </Modal.Body>
 
         </Modal>
