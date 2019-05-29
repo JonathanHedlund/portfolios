@@ -2,11 +2,12 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    margin-top: 125px;
+    height: 95vh;
     padding: auto;
     font-family: 'Karla', sans-serif;
     color: #353636;
     padding-bottom: 40px;
+    align-content: center;
 }
 .Personal {
     width: 50%;
@@ -79,7 +80,7 @@ hr {
     margin: 15px 40px;
     background-color: #C7B299;
     border-radius: 10px;
-    box-shadow: 4px 4px #CCCCCC;
+    
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     padding: 4px;
@@ -102,7 +103,8 @@ hr {
     text-align: center;
     margin-top: 22px;
     color: #353636;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -112,7 +114,8 @@ hr {
     justify-content: center;
     margin-left: 15%;
     margin-top: 20px;
-      }
+    height: auto;
+    }
     .Personal {
         width: 80%;
     }
@@ -120,6 +123,7 @@ hr {
         align-items: center;
         margin-left: 0;
         width: 80%;
+        margin-top: 20px;
     }
 }
 @media only screen and (max-width: 940px) {
@@ -160,7 +164,7 @@ hr {
 }
 @media only screen and (max-width: 600px) {
     .Work {
-        margin: 20px 35px;   
+        margin: 15px 35px;   
     }
     .Work h3{
         margin-top: 20px;
@@ -176,14 +180,14 @@ hr {
      margin: 15px 20px;
     }
     .Work h3{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 400px) {
     .Work {
-        
         width: 270px;
         height: 80px;   
+        margin: 10px 20px;
     }
     .Work h3 {
         margin-top: 18px;
@@ -206,7 +210,7 @@ hr {
         height: 80px;   
     }
     .Work h3{
-        font-size: 13px;
+        font-size: 17px;
     }
     .Info h1{
         font-size: 28px;
