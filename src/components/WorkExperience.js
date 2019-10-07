@@ -1,45 +1,43 @@
-import React, { Component } from 'react';
-import Modal from 'react-bootstrap/Modal'
-import { Button } from 'react-bootstrap';
-import './Modal.css'
+import React from 'react';
+import '../Work.css';
+import { Link, NavLink } from 'react-router-dom'
+import back from '../back.png'
+import Piteakommun from './work/piteakommun'
+import { Route } from 'react-router-dom'
+import { Link as Liink, animateScroll as scroll } from "react-scroll";
 
-class WorkExperience extends React.Component {
-    constructor(props, context) {
-        super(props, context);
+const WorkExperience = () => {
+    return (
+        <div className="work">
+            <div className="header">
+                <Link to="/"><img src={back} alt="Back arrow" /></Link>
+                <NavLink className="current" to="../work"><h1>Work</h1></NavLink>
+                <NavLink className="notCurrent" to="../projects"><h1>Projects</h1></NavLink>
+                <NavLink className="notCurrent" to="../experiences"><h1>Experience</h1></NavLink>
+            </div>
+            <div className="info">
+                <div className="list">
+                    <ul>
+                        <Liink
+                            activeClass="active"
+                            to="pitea"
+                            spy={true}
+                            smooth={true}
+                            offset={-150}
+                            duration={500}
+                        >
+                            <li id="link"><h3>Piteå kommun</h3></li>
+                        </Liink>
+                    </ul>
+                    <div class="vertical"></div>
+                </div>
+                <div>
+                    <Piteakommun></Piteakommun>
+                </div>
 
-        this.handleShow = this.handleShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
-
-        this.state = {
-            show: false,
-        };
-    }
-
-    handleClose() {
-        this.setState({ show: false });
-    }
-
-    handleShow() {
-        this.setState({ show: true });
-    }
-
-    render() {
-        return (
-            <>
-                <button className="Work" variant="primary" onClick={this.handleShow}>
-                    <h3>WORK EXPERIENCE</h3>
-                </button>
-
-                <Modal show={this.state.show} onHide={this.handleClose}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Work experience</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>Coming soon.</Modal.Body>
-
-                </Modal>
-            </>
-        );
-    }
+            </div>
+        </div>
+    );
 }
 
-export default WorkExperience;
+export default WorkExperience
