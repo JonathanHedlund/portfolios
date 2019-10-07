@@ -9,7 +9,7 @@ import { Link as Liink, animateScroll as scroll } from "react-scroll";
 
 const Experiences = () => {
     return (
-        <div className="works">
+        <div className="work">
             <div className="header">
                 <Link to="/"><img src={back} alt="Back arrow" /></Link>
                 <NavLink className="notCurrent" to="../work"><h1>Work</h1></NavLink>
